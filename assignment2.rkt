@@ -24,6 +24,15 @@
 (define lowg (+ 55 octave))
 (define lowf# (+ 54 octave))
 (define lowf (+ 53 octave))
+(define lowe (+ 52 octave))
+(define lowd# (+ 51 octave))
+(define lowd (+ 50 octave))
+(define lowc# (+ 49 octave))
+(define lowc (+ 48 octave))
+(define lowb (+ 47 octave))
+(define lowesta# (+ 46 octave))
+(define lowesta (+ 45 octave))
+
 
 
 
@@ -32,7 +41,7 @@
 ;beats / (beats/s) = seconds
 ;seconds * frames/s = frames
 (define (beats bt)
-(* 44100(/ bt (/ tempo 60))))
+(round(* 44100(/ bt (/ tempo 60)))))
 
 
   
@@ -59,10 +68,34 @@
 
 
 
-
+(define song
 (rs-append
+ (play-note lowa 1)
+ (play-note lowa 1)
+ (play-note lowa 2)
+ 
+ (silence (beats 1/2))
+ (play-note lowa 1/2)
+ (play-note highd 1.5)
+ (play-note lowa 1/2)
+ (play-note highd 1)
+ 
+ (play-note lowa 1)
+ (play-note lowa 1)
+ (play-note lowa 2)
+ 
+ (silence (beats 1/2))
+ (play-note lowa 1/2)
+ (play-note higha 1.5)
+ (play-note lowa 1/2)
  (play-note higha 1)
+ 
  (play-note higha 1)
+ (play-note highc 1)
+ (play-note highb 1)
+ (play-note highd 1)
+  
+
  
  
 
