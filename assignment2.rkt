@@ -4,18 +4,20 @@
 (require rsound)
 (define octave 0)
 
-(define a# (+ 70 octave))
-(define a (+ 69 octave))
-(define g# (+ 68 octave))
-(define g (+ 67 octave))
-(define f# (+ 66 octave))
-(define f (+ 65 octave))
-(define e (+ 64 octave))
-(define d# (+ 63 octave))
-(define d (+ 62 octave))
-(define c# (+ 61 octave))
-(define c (+ 60 octave))
-(define b (+ 59 octave))
+
+
+(define higha# (+ 70 octave))
+(define higha (+ 69 octave))
+(define highg# (+ 68 octave))
+(define highg (+ 67 octave))
+(define highf# (+ 66 octave))
+(define highf (+ 65 octave))
+(define highe (+ 64 octave))
+(define highd# (+ 63 octave))
+(define highd (+ 62 octave))
+(define highc# (+ 61 octave))
+(define highc (+ 60 octave))
+(define highb (+ 59 octave))
 (define lowa# (+ 58 octave))
 (define lowa (+ 57 octave))
 (define lowg# (+ 56 octave))
@@ -37,8 +39,36 @@
   
 
 ;(define-struct note (pitch dur))
-  
 
-(define (play-note note-number beats)
-(synth-note "vgame" 49 note-number (beats beats)))
+(define (16thgroup first second third fourth)
+  (rs-append (play-note first 1/16)
+             (play-note second 1/16)
+             (play-note third 1/16)
+             (play-note fourth 1/16)))
+(define (8thgroup first second third fourth)
+  (rs-append (play-note first 1/8)
+             (play-note second 1/8)
+             (play-note third 1/8)
+             (play-note fourth 1/8)))
+             
+
+(define (play-note note-number beat)
+(synth-note "main" 12 note-number (beats beat)))
+
+
+
+
+
+
+(rs-append
+ (play-note higha 1)
+ (play-note higha 1)
+ 
+ 
+
+
+
+
+
+
 
