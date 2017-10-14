@@ -93,7 +93,7 @@
  (play-note higha 1)
  (play-note highc 1)
  (play-note highb 1)
- (play-note highd 1)))
+ (play-note highd 1)
   
 
  
