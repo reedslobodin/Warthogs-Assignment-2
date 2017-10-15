@@ -95,8 +95,17 @@
  (play-note highb 1)
  (play-note highd 1)))
   
+;jj
 
- 
+(define jj
+(rs-append
+ (play-note highf# 1)
+ (play-note higha 1/64)
+ (play-note highg 1/8)
+ (play-note highf# 1/16)
+ (play-note highe 1/16)
+ (play-note highd 1/8)
+ ))
  
 
 
