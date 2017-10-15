@@ -68,7 +68,7 @@
 
 
 
-(define song
+(define part3
 (rs-append
  (play-note lowa 1)
  (play-note lowa 1)
@@ -85,17 +85,59 @@
  (play-note lowa 2)
  
  (silence (beats 1/2))
- (play-note lowa 1/2)
- (play-note higha 1.5)
- (play-note lowa 1/2)
- (play-note higha 1)
+ (play-note lowesta 1/2)
+ (play-note lowa 1.5)
+ (play-note lowesta 1/2)
+ (play-note lowa 1)
  
- (play-note higha 1)
+ (play-note lowa 1)
  (play-note highc 1)
  (play-note highb 1)
  (play-note highd 1)
-  
 
+ (play-note highd .75)
+ (play-note highf# .25)
+ (play-note highe .5)
+ (play-note highd .25)
+ (play-note highc# .25)
+ (play-note highd 1)
+ (silence (beats 1))
+
+ (play-note lowd 1)
+ (play-note lowd# 1)
+ (play-note lowe 1)
+ (play-note lowf 1)
+  
+ (play-note lowf# .75)
+ (play-note lowa .25)
+ (play-note lowg .5)
+ (play-note lowf# .25)
+ (play-note lowe .25)
+ (play-note lowd .5)
+ (silence (beats 1.5))
+
+ (play-note lowa .5)
+ (play-note lowa .5)
+ (play-note lowa .5)
+ (silence (beats .5))
+ (play-note lowa .5)
+ (play-note lowa .5)
+ (play-note lowa .5)
+ (silence (beats .5))
+
+ 
+ (silence (beats .5))
+ (play-note highb .5)
+ (silence (beats .5))
+ (play-note highb .5)
+ (play-note lowe 1)
+ (16thgroup highd highc# highb lowa)
+
+ (16thgroup lowg# lowa lowg# lowa)
+ (16thgroup lowg# lowa highb lowg)
+ (16thgroup lowe# lowf# lowe# lowf#)
+ (16thgroup lowe# lowf# lowa lowf#)
+ 
  
  
 
