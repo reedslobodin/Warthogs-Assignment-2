@@ -433,4 +433,5 @@
 ; that could pause the song, play the song faster, slower, or at a different volume. Currently the program is split
 ; into five parts, part 1 being founding definitions to use in the next four parts, which were then the parts of the
 ; song we had split up and assigned each team member to write the code for. Each part was 2 staffs, with the exception
-; of the last staff which had some extra measures. We hope you enjoy our coded version of Viola 2!
+; of the last staff which had some extra measures. We hope you enjoy our coded version of Violin 2!
+
