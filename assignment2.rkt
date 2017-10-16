@@ -276,19 +276,139 @@
 
 ;part4 jj
 (define measure44
+  (play-note highd 4))
+(define measure45
   (rs-append
-   (play-note lowf 0.5)
-   (play-note lowe 0.5)
-   (silence (beats 0.5))
+   (play-note highd 0.75)
+   (play-note highf# 0.25)
+   (play-note highe 0.5)
+   (play-note highd 0.25)
+   (play-note highc# 0.25)
+   (play-note highd 2)))
+(define measure46
+  (rs-append
+   (play-note higha 2)
+   (play-note highb 2)))
+(define measure47
+  (rs-append
+   (play-note highf# 2)
+   (play-note highg 2)))
+(define measure48
+  (rs-append
+   (play-note lowg 0.25)
+   (play-note lowa 0.25)
+   (play-note highb 0.25)
+   (play-note highc# 0.25)
+   (play-note highd 0.25)
+   (play-note highe 0.25)
+   (play-note highf# 0.25)
+   (play-note highg 0.25)
+   (play-note highf# 0.5)
+   (silence (beats .5))
+   (play-note highg 0.5)
+   (silence (beats .5))
+   ))
+(define measure49
+  (rs-append
+   (play-note highf# 0.5)
+   (silence (beats .5))
+   (play-note highe 0.5)
+   (silence (beats .5))
+   (play-note highd 0.5)
+   (silence (beats .5))
    (play-note highb 0.5)
-   (play-note lowa 1.5)
-   (play-note lowg# 0.5)))
- 
+   (silence (beats .5))
+   ))
+(define measure50
+  (rs-append
+   (play-note lowa 0.5)
+   (silence (beats .5))
+   (play-note lowg 0.5)
+   (silence (beats .5))
+   (play-note lowf# 0.5)
+   (silence (beats .5))
+   (play-note lowf 0.5)
+   (silence (beats .5))
+   ))
+(define measure51
+  (rs-append
+   (play-note lowf 1)
+   (play-note lowf# 1.5)
+   (play-note lowf# 0.5)
+   (play-note lowg 0.5)
+   (play-note lowg 0.5)
+   ))
+(define measure52
+  (rs-append
+   (play-note lowf# 0.5)
+   (silence (beats 0.5))
+   (play-note lowf 2)
+   (play-note lowf# 1)
+   ))
+(define measure53
+  (rs-append
+   (play-note lowf# 0.5)
+   (play-note lowf# 0.5)
+   (play-note lowg 0.5)
+   (play-note lowg 0.5)
+   (play-note lowf# 0.5)
+   (silence (beats 0.5))
+   (play-note lowg 0.5)
+   (play-note lowg 0.5)
+   ))
+(define measure54
+  (rs-append
+   (play-note lowf# 0.5)
+   (silence (beats 0.5))
+   (play-note highf# 0.25)
+   (play-note highg 0.25)
+   (play-note highf# 0.25)
+   (play-note highe 0.25)
+   (play-note highd 0.5)
+   (silence (beats 1.5))
+   ))
+(define measure55
+  (rs-append
+   (play-note lowd 0.75)
+   (play-note lowd 0.25)
+   (play-note lowd 0.75)
+   (play-note lowd 0.25)
+   (play-note lowd 0.75)
+   (play-note lowd 0.25)
+   (play-note lowd 0.75)
+   (play-note lowd 0.25)
+   ))
+(define measure56
+  (rs-append
+   (play-note lowd 0.5)
+   (silence (beats 0.5))
+   (play-note lowc# 0.75)
+   (play-note lowb 0.125)
+   (play-note lowc# 0.125)
+   (play-note lowd 1)
+   (silence (beats 0.5))
+   ))
+(define part4
+  (rs-append
+   measure44
+   measure45
+   measure46
+   measure47
+   measure48
+   measure49
+   measure50
+   measure51
+   measure52
+   measure53
+   measure54
+   measure55
+   measure56))
 ;play song
 (define quartet
   (rs-append
    part1
-   part3))
+   part3
+   part4))
 
 (play quartet)
 
