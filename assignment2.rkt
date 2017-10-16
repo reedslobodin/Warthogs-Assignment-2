@@ -32,6 +32,9 @@
 (define lowb (+ 47 octave))
 (define lowesta# (+ 46 octave))
 (define lowesta (+ 45 octave))
+(define lowestg# (+ 44 octave))
+(define lowestg (+ 43 octave))
+
 
 
 
@@ -61,11 +64,150 @@
              (play-note third 1/2)
              (play-note fourth 1/2)))
              
+; PART 1: CHARSKIE
+
+
+(define measure1
+  (silence (beats 0.5)))
+
+(define measure2
+  (rs-append
+   (play-note highb 1)
+   (play-note lowg 1)
+   (play-note highc 1.5)
+   (play-note highb 0.5)))
+
+(define measure3
+  (rs-append
+   (play-note lowa 1)
+   (play-note highb 1)
+   (play-note highb 1)
+   (play-note lowa 0.5)
+   (silence (beats 0.5))))
+
+(define measure4
+  (rs-append
+   (play-note lowe 2)
+   (play-note lowd 1.5)
+   (play-note lowc# 0.5)))
+
+(define measure5
+  (rs-append
+   (play-note lowd 2)
+   (play-note lowd 0.5)
+   (play-note lowf 0.5)
+   (play-note lowb 0.5)
+   (silence (beats 0.5))))
+
+(define measure6
+  (rs-append
+   (silence (beats 4))))
+
+(define measure7
+  (rs-append
+   (play-note lowa 1)
+   (play-note highc 0.5)
+   (play-note lowb 0.25)
+   (play-note lowa 0.25)
+   (play-note highf 1)
+   (play-note highg 0.5)
+   (silence (beats 0.5))))
+
+(define measure8
+  (rs-append
+   (silence (beats 2))
+   (play-note lowg 2)))
+
+(define measure9
+  (rs-append
+   (play-note lowg 1)
+   (play-note lowf 1)
+   (play-note lowg 1)
+   (silence (beats 1))))
+
+(define measure10
+  (rs-append
+   (silence (beats 2))
+   (play-note lowg 2)))
+   
+(define measure11
+  (rs-append
+   (play-note lowd 1)
+   (play-note lowc 1)
+   (play-note lowb 1)
+   (silence (beats 0.5))
+   (play-note lowestg 0.5)))
+
+(define measure12
+  (rs-append
+   (play-note lowd 1)
+   (play-note lowg 1)
+   (play-note lowg 1)
+   (play-note lowf 0.5)
+   (play-note lowe 0.5)))
+
+(define measure13
+  (rs-append
+   (play-note lowd 0.5)
+   (play-note lowd# 0.5)
+   (play-note lowe 0.5)
+   (play-note lowb 0.5)
+   (play-note lowd 1)
+   (play-note lowc 0.5)
+   (play-note lowb 0.5)))
+
+(define measure14
+  (rs-append
+   (play-note lowestg 1)
+   (silence (beats 1))
+   (silence (beats 0.5))
+   (play-note lowg# 0.5)
+   (play-note lowa 0.5)
+   (play-note lowe 0.5)))
+
+(define measure15
+  (rs-append
+   (play-note lowg 1)
+   (play-note lowf 0.5)
+   (silence (beats 0.5))
+   (silence (beats 0.5))
+   (play-note lowf 0.5)
+   (play-note lowg 0.5)
+   (play-note lowd# 0.5)))
+
+(define measure16
+  (rs-append
+   (play-note lowf 0.5)
+   (play-note lowe 0.5)
+   (silence (beats 0.5))
+   (play-note highb 0.5)
+   (play-note lowa 1.5)
+   (play-note lowg# 0.5)))
+
+(define part1
+  (rs-append
+   measure1
+   measure2
+   measure3
+   measure4
+   measure5
+   measure6
+   measure7
+   measure8
+   measure9
+   measure10
+   measure11
+   measure12
+   measure13
+   measure14
+   measure15
+   measure16))
 
 
 
 
 
+; PART 3: REED
 
 
 (define part3
@@ -144,7 +286,12 @@
  
  
  
- 
+(define quartet
+  (rs-append
+   part1
+   part3))
+
+(play quartet) 
 
 
 
