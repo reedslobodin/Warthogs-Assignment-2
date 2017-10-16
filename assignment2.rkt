@@ -286,12 +286,7 @@
  
  
  
-(define quartet
-  (rs-append
-   part1
-   part3))
 
-(play quartet)
 
 ;catherine
 
@@ -479,7 +474,13 @@
 
 
 
+(define quartet
+  (rs-append
+   part1
+   part2
+   part3))
 
+(play quartet)
 
 
 
