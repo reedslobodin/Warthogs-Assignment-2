@@ -275,7 +275,7 @@
  (play-note lowd 2)))
 
 ;part4 jj
- (define measure44
+(define measure44
   (rs-append
    (play-note lowf 0.5)
    (play-note lowe 0.5)
