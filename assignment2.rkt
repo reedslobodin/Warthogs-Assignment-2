@@ -483,4 +483,21 @@
 
 
 
-
+; ONE PARAGRAPH WRITE-UP
+; Throughout designing our program, we would have many ideas but eventually we would all end up pursuing
+; our own ways to process the notes in the song in order to get them to play through the code. One idea
+; that seemed to stick was to define each note and then append the notes in each measure in order to play
+; them. We would also develop a function tat converted seconds into beats in order to make it easier for us
+; to define lengths of notes and to check our work. The way we would check our work was to make sure the beats
+; added up to four in every measure. We would then develop a play-note function to play our notes all based
+; around the sound made from the (synth-note "main" 12 note-number (beats beat))) sound using our note-numbers
+; based on the notes we had defined earlier basing them on additions of our octave, or 0. We would then also use
+; our seconds to beats function inside of this to show the length of our note. We would then append these notes to
+; make the measures and eventually build all of those together to create the song. That would be the way I personally
+; went about the process to develop my code. However, I know that others would use lines or spaces to define what
+; notes were being played and they would also use seconds to define their note length. We also had some ideas to
+; build on this program, such as interactive aspects you could add to this program. Such as adding key presses
+; that could pause the song, play the song faster, slower, or at a different volume. Currently the program is split
+; into five parts, part 1 being founding definitions to use in the next four parts, which were then the parts of the
+; song we had split up and assigned each team member to write the code for. Each part was 2 staffs, with the exception
+; of the last staff which had some extra measures. We hope you enjoy our coded version of Viola 2!
