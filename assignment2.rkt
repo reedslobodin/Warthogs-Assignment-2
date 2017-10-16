@@ -38,15 +38,23 @@
 ;bpm * minutes/s = beats/s
 ;beats / (beats/s) = seconds
 ;seconds * frames/s = frames
+
+
+;Turn number of beats into frames
+; Number --> Number
 (define (beats bt)
 (round(* 44100(/ bt (/ tempo 60)))))
+(check-expect (beats 1) 20354)
+(check-expect (beats 1/2) 10177)
 
 
-  
+
+
+  ;Creates a note of a certain amount of beats at a midi note number
+; Number Number --> rsound
   (define (play-note note-number beat)
 (synth-note "main" 12 note-number (beats beat)))
 
-;(define-struct note (pitch dur))
 
 (define (16thgroup first second third fourth)
   (rs-append (play-note first 1/4)
